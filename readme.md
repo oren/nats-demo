@@ -22,16 +22,16 @@ gnatsd
 
 Run a subscriber
 ```
-go run nats-sub.go msg.test
+go run nats-sub.go com.msg.one
 
-Listening on [msg.test]
+Listening on [com.msg.one]
 ```
 
 Run a publisher
 ```
-go run nats-pub.go msg.test "NATS MESSAGE"
+go run nats-pub.go com.msg.one "NATS MESSAGE"
 
-Published [msg.test] : 'NATS MESSAGE'
+Published [com.msg.one] : 'NATS MESSAGE'
 ```
 
-Notice that the subscriber recieves the message. You should see: `[#1] Received on [msg.test]: 'NATS MESSAGE'`
+Notice that the subscriber recieves the message. You should see: `[#1] Received on [com.msg.one]: 'NATS MESSAGE'`
