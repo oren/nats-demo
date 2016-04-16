@@ -6,9 +6,9 @@
 
 Setup
 ```
-go get github.com/nats-io/gnatsd
-git clone https://github.com/nats-io/nats
-cd nats && go get && cd examples
+go get github.com/nats-io/gnatsd   # (installes gnatsd binary in your path)
+go get github.com/nats-io/nats     # (puts a few *.a files in pkg folder)
+git clone https://github.com/oren/nats-demo && cd nats-demo
 ```
 
 Run the NATS server
@@ -20,16 +20,16 @@ gnatsd
 [25846] 2016/04/16 02:15:18.330675 [INF] server is ready
 ```
 
-Run a subscriber
+Run a subscriber. It listens to the message of this format: com.msg.one
 ```
-go run nats-sub.go com.msg.one
+go run sub.go com.msg.one
 
 Listening on [com.msg.one]
 ```
 
 Run a publisher
 ```
-go run nats-pub.go com.msg.one "NATS MESSAGE"
+go run pub.go com.msg.one "NATS MESSAGE"
 
 Published [com.msg.one] : 'NATS MESSAGE'
 ```
