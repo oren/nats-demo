@@ -2,6 +2,8 @@
 
 [NATS](http://nats.io) is a messaging system for distributed systems.
 
+![NATS](http://nats.io/img/documentation/nats-pub-sub-eg.png)
+
 Setup
 ```
 go get github.com/nats-io/gnatsd
