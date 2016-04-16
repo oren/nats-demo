@@ -35,3 +35,8 @@ Published [com.msg.one] : 'NATS MESSAGE'
 ```
 
 Notice that the subscriber recieves the message. You should see: `[#1] Received on [com.msg.one]: 'NATS MESSAGE'`
+
+## More Documentation
+
+* [Demo protocol](demo-protocol.md)
+* [Monitoring](Monitoring.md)
