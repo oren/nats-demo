@@ -39,4 +39,4 @@ Notice that the subscriber recieves the message. You should see: `[#1] Received 
 ## More Documentation
 
 * [Demo protocol](demo-protocol.md)
-* [Monitoring](Monitoring.md)
+* [Monitoring](monitoring.md)
